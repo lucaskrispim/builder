@@ -6,7 +6,7 @@ public class Main {
                 .comMemoriaRAM("32GB DDR4")
                 .comArmazenamento("1TB SSD")
                 .comPlacaVideo("NVIDIA RTX 3080")
-                .construir();
+                .build();
 
         System.out.println(computador);
     }

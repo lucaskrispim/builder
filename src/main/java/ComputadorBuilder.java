@@ -30,7 +30,20 @@ class ComputadorBuilder {
         return this;
     }
 
-    public Computador construir() {
+    public Computador build() {
+
+        if (computador.getPlacaMae().isEmpty()) {
+            throw new IllegalArgumentException("Placa Mãe inválida");
+        }
+
+        if (computador.getProcessador().isEmpty()) {
+            throw new IllegalArgumentException("Processador inválido");
+        }
+
+        if (computador.getMemoriaRAM().isEmpty()) {
+            throw new IllegalArgumentException("Memória RAM inválida");
+        }
+
         return computador;
     }
 }

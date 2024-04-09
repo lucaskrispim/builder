@@ -3,6 +3,15 @@ class Computador {
     private String placaMae;
     private String memoriaRAM;
 
+    private String armazenamento;
+    private String placaVideo;
+
+    public Computador() {
+        this.placaMae ="";
+        this.processador = "";
+        this.memoriaRAM = "";
+    }
+
     public String getProcessador() {
         return processador;
     }
@@ -23,10 +32,6 @@ class Computador {
         return placaVideo;
     }
 
-    private String armazenamento;
-    private String placaVideo;
-
-    // Métodos setters para cada atributo
     public void setProcessador(String processador) {
         this.processador = processador;
     }
@@ -47,14 +52,4 @@ class Computador {
         this.placaVideo = placaVideo;
     }
 
-    @Override
-    public String toString() {
-        return "Computador{" +
-                "processador='" + processador + '\'' +
-                ", placaMae='" + placaMae + '\'' +
-                ", memoriaRAM='" + memoriaRAM + '\'' +
-                ", armazenamento='" + armazenamento + '\'' +
-                ", placaVideo='" + placaVideo + '\'' +
-                '}';
-    }
 }
